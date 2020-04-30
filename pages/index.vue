@@ -1,73 +1,66 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        profe
-      </h1>
-      <h2 class="subtitle">
-        agendar citas educativas
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <section>
+      <div class="back">
+        <div class="logo">
+          <p class="text-white text-center">
+            Aprende desde cualquier lugar con
+          </p>
+          <img
+            src="https://miprofenlinea.com/wp-content/uploads/2020/04/3-2.png"
+            alt="logo"
+          />
+          <div class="flex justify-center">
+            <Vbutton content="Registrarme" url="/"></Vbutton>
+            <Vbutton class="ml" content="Ingresar" url="/"></Vbutton>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="back-opacity"></div>
+    </section>
   </div>
 </template>
-
 <script>
-import Logo from '~/components/Logo.vue'
-
+import Vbutton from '~/components/Vbutton'
 export default {
   components: {
-    Logo
+    Vbutton
   }
 }
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+<style scoped>
+.back {
+  background-image: url('https://miprofenlinea.com/wp-content/uploads/2020/04/artificial-intelligence-machine-4082314-1.jpg');
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+@media (min-width: 769px) {
+  .back-opacity {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+    height: 95vh;
+    background-color: Black;
+    z-index: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+  }
+  .logo {
+    position: absolute;
+    z-index: 2;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 25%;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  .ml {
+    margin-left: 6rem;
+  }
 }
 </style>
