@@ -57,8 +57,8 @@ li {
   color: white;
 }
 li:hover {
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  color: yellow;
 }
 ul {
   margin: 0;
