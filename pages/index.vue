@@ -1,19 +1,23 @@
 <template>
   <div>
-    <div class="back">
-      <div class="logo">
-        <p class="text-white text-center">Aprende desde cualquier lugar con</p>
-        <img
-          src="https://miprofenlinea.com/wp-content/uploads/2020/04/3-2.png"
-          alt="logo"
-        />
-        <div class="flex justify-center">
-          <Vbutton content="Registrarme" url="/"></Vbutton>
-          <Vbutton class="ml" content="Ingresar" url="/"></Vbutton>
+    <section>
+      <div class="back">
+        <div class="logo">
+          <p class="text-white text-center">
+            Aprende desde cualquier lugar con
+          </p>
+          <img
+            src="https://miprofenlinea.com/wp-content/uploads/2020/04/3-2.png"
+            alt="logo"
+          />
+          <div class="flex justify-center">
+            <Vbutton content="Registrarme" url="/"></Vbutton>
+            <Vbutton class="ml" content="Ingresar" url="/"></Vbutton>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="back-opacity"></div>
+      <div class="back-opacity"></div>
+    </section>
   </div>
 </template>
 <script>
