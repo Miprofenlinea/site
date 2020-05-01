@@ -24,7 +24,9 @@
       </div>
       <div class="back-opacity"></div>
     </section>
-    <section class="flex justify-center secH">Aquí mi nueva sección</section>
+    <section class="flex justify-center secH">
+      <yoQuiero content="Aprender" url="/"></yoQuiero>
+    </section>
   </div>
 </template>
 <script>
@@ -34,6 +36,7 @@ export default {
     Vbutton
   }
 }
+// import YoQuiero from '~/components/YoQuiero'
 </script>
 <style scoped>
 .back {
@@ -54,6 +57,9 @@ export default {
   background-color: Black;
   z-index: 1;
   filter: alpha(opacity=55);
+  /* brightness: 100%;
+  contrast: 80%;
+  saturate: 102%; */
   opacity: 0.6;
 }
 .logo {
