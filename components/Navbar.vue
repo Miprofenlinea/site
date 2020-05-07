@@ -3,7 +3,7 @@
     <div class="flex justify-between">
       <nuxt-link to="/">
         <img
-          src="https://miprofenlinea.com/wp-content/uploads/2020/04/3-2.png"
+          src="@/assets/logo.png"
           alt="Logo mi profe en linea"
         />
       </nuxt-link>
